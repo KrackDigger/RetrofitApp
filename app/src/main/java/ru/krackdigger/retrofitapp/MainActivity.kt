@@ -82,7 +82,6 @@ class MainActivity : AppCompatActivity() {
             2
         }
 
-        binding.userList.layoutManager = LinearLayoutManager(this)
         binding.userList.layoutManager = GridLayoutManager(this, span_count)
         binding.userList.setItemViewCacheSize(20);
         binding.userList.adapter = CustomRecyclerAdapter(list)
